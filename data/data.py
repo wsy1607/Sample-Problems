@@ -16,6 +16,18 @@ data[["totalSales"]] = data[["totalSales"]].astype(int)
 #filter data
 data = data[data["totalSales"] >= 500]
 data = data[["customer","quantityCount"]]
+
+#case 1: use group_by function
 #group by customers
-output = data.groupby('customer',as_index=False).size()
+output = data.groupby('customer',as_index=False).sum()
+print output
+
+#case 2: do not use group_by function
+customers = []
+quantityCount = []
+for customer in set(data['customer'].values.tolist()):
+    customers.append(customer)
+    quantityCount.append(sum(data.loc[data['customer'] == customer,"quantityCount"].tolist()))
+
+output = pd.DataFrame({'customer':customers,'quantityCount':quantityCount}).sort_index(by=['customer'])
 print output
