@@ -35,3 +35,8 @@ for (i in 1:length(uniqueCustomers)){
 }
 output <- data.frame(customer = customers,quantityCount = quantityCounts)
 output
+
+#order the output if necessary
+output[with(output,order(-totalQuantity)),]
+#or
+arrange(output,desc(totalQuantity))
