@@ -5,6 +5,9 @@ library(dplyr)
 #read the orders.csv
 rawData <- read.csv("orders.csv",header=T)
 
+#filter NA
+rawData <- na.omit(rawData)
+
 #change data types
 rawData$quantityCount <- as.numeric(rawData$quantityCount)
 rawData$totalSales <- as.numeric(rawData$totalSales)

@@ -10,6 +10,8 @@ with open("orders.csv","rb") as f:
         rawData.append(row)
 
 data = pd.DataFrame(rawData[1:],columns=rawData[0])
+#filter NA
+data = data.dropna()
 #change data type
 data[["quantityCount"]] = data[["quantityCount"]].astype(int)
 data[["totalSales"]] = data[["totalSales"]].astype(int)
