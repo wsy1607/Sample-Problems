@@ -5,12 +5,23 @@ library(dplyr)
 #read the orders.csv
 rawData <- read.csv("orders.csv",header=T)
 
+#check NA
+is.na(rawData)
 #filter NA
 rawData <- na.omit(rawData)
+#or replace NA
+rawData[is.na(rawData)] <- 0
+
+#check data type
+sapply(rawData, class)
 
 #change data types
 rawData$quantityCount <- as.numeric(rawData$quantityCount)
 rawData$totalSales <- as.numeric(rawData$totalSales)
+rawData$customer <- as.character(rawData$customer)
+
+#summrise data
+summary(rawData)
 
 #case 1: use 'dplyr' package
 #filter data

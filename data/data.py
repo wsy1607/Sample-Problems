@@ -10,11 +10,17 @@ with open("orders.csv","rb") as f:
         rawData.append(row)
 
 data = pd.DataFrame(rawData[1:],columns=rawData[0])
+#check NA
+print data.notnull()
 #filter NA
 data = data.dropna()
+#or replace NA
+data = data.fillna(0)
+#check data type
+print data.dtypes
 #change data type
 data[["quantityCount"]] = data[["quantityCount"]].astype(int)
-data[["totalSales"]] = data[["totalSales"]].astype(int)
+data[["totalSales"]] = data[["totalSales"]].astype(float)
 #filter data
 data = data[data["totalSales"] >= 500]
 data = data[["customer","quantityCount"]]
