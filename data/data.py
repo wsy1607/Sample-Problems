@@ -2,6 +2,8 @@
 import csv
 import pandas as pd
 
+#b = ['a' if aa > 2 else 'b' for aa in a]
+
 #read the orders.csv file
 rawData = []
 with open("orders.csv","rb") as f:
