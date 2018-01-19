@@ -5,10 +5,12 @@ import csv
 #to do:
 
 data = pd.read_csv('company.csv', sep=',')
-data[['year']] = data[['year']].astype(int)
+data['year'] = data['year'].astype(float)
 data[['company']] = data[['company']].fillna('')
 data[['year']] = data[['year']].fillna('')
 
+print(data.dtypes)
+aaa
 # raw_data = []
 # with open('company.csv', 'rb') as f:
 #     reader = csv.reader(f)
