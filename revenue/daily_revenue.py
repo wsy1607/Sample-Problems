@@ -8,6 +8,9 @@ raw_data = pd.read_csv('daily_revenue.csv', sep=',')
 revenue_date = [datetime.strptime(x, '%m/%d/%y') for x in raw_data['date'].values.tolist()]
 raw_data['new_date'] = revenue_date
 
+def get_date(x):
+    return(datetime.strptime(x, '%m/%d/%y'))
+
 # self join and filter rows
 data = pd.merge(raw_data, raw_data, how='inner', on='userid')
 data = data.loc[(data['platform_x'] == 'ios') & (data['platform_y'] == 'gpl')]
@@ -16,4 +19,5 @@ print(data)
 print(len(set(data['userid'].values.tolist())))
 # print(raw_data)
 # raw_data = raw_data.reindex(np.random.permutation(raw_data.index))
-# print(raw_data)
+raw_data['new_new_date'] = map(get_date, raw_data['date'])
+print(raw_data)
