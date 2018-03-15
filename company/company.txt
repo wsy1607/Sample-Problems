@@ -1,0 +1,19 @@
+M1: Statistical Modeling
+Q1: long tail data
+A1: normalization / set up limit / take log
+
+Q2: missing data
+A2: fill with mean, mode, median or 0 / delete / predict the missing value / clustering
+
+Q3: imbalance data
+A3: down sampling / up sampling
+
+Q4: SVM slow
+A4: kernel function / gamma / c parameters
+
+M2: Statistical Experiment Design
+Q1: test an email campaign on two different countries
+A1: need to stratified sampling to remove bias or do an AA test before
+
+Q2: get 5.5% p value
+A2: look at power / get more samples / look at other related kpis
