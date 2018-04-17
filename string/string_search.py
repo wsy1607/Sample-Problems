@@ -49,4 +49,4 @@ def find_length(input_string, char_set):
     print(output)
     return(output)
 
-find_length('abdbfxxdakf', set(['a','d','f']))
+find_length('facbserwrtruhndfhfgjtdfasascdgfdyh', set(['c','d','s']))

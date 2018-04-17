@@ -1,6 +1,6 @@
 # Here's a public API endpoint that we use here for enrollment
 # into various kinds of studies including surveys and a/b experiments:
-# https://normandy.services.mozilla.com/api/v1/recipe/
+# https://normandy.services.m_company.com/api/v1/recipe/
 # We'd like to grab all the studies in this API that have the action
 # "preference-experiment" and end up with a python dictionary where the key is
 # the experiment's slug, and the values are the branches in the experiment and
@@ -18,7 +18,7 @@ from collections import defaultdict
 import json
 
 
-experiments = requests.get("https://normandy.services.mozilla.com/api/v1/recipe/?format=json").json()
+experiments = requests.get("https://normandy.services.m_company.com/api/v1/recipe/?format=json").json()
 
 print(experiments)
 experiments_ratio = {}
