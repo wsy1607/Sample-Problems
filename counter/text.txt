@@ -1,0 +1,39 @@
+April is closing well. Thanks to excellent Offer performance, a strong event,
+and a Gold Sale, has resulted with us trending to 35% over targets for the month.
+This month will close with the launch of our new Shadow Ops, which features the Prophet,
+a powerful tank that fire a massive piercing Rail Gun. Blitz is also nearing completion,
+and we also dark launched our new Mission Tool, which should go live to players next week.
+Event 76 ran from Thursday last week until yesterday. It was the second in our 4 event cycle,
+and featured the Envoy: airborne missile artilley! The Event performed well,
+matching last month's in terms of participation, and exceeding in revenue by 30%,
+resulting in our highest grossing event in 2 years. We struggled out the gate with some technical issues
+which required a hotfix this Monday, but the overall design of the missions and allure of the unit
+carried the event through to the end.
+
+Power Rework
+
+The way power plants work in WCB has been redesigned!
+The requirements for power are higher, but now Power Plants can be overcharged to double the power provided.
+The tradeoff, is that when destroyed they explode, causing massive damage to surrounding units and structures.
+
+Hey gang, i wont be at the team meeting this afternoon.  so i will start with my points and then share some love
+
+Points:
+
+Jira ticketing: In an effort to stop people from working long nights and struggling to get work in on time, i have started implementing a method of tracking how long things actually take.  The only problem i am currently experiencing is that no one is opening and closing tickets in a way that allows me to track.
+
+When you are starting on work, please move the ticket to in progress, if you are no longer working on something and have moved on, please update the ticketing to reflect this.  at no point should anyone have 3-4 things in "in progress" as that is a physical impossibility.
+
+When i have collected enough good data, i can then estimate with high accuracy how long things take.  this can only make us better because then we can set more accurate milestones and people are not putting in 14 hr days to make a cut off because we have run out of time (do to it not having been accurately estimated and accounted for at the onset of the project)
+
+So please be diligent and dont just open and close tickets in the same time window. Please clock in and out accordingly, this will only help you out in the long run.
+
+Love:
+
+Nick, he took time out of his busy schedule to talk to me about enyo restarting and the process that goes on in the background that we all take for granted.  thanks Nick.
+
+Len, for keeping me in the loop regarding QA status of projects last week.  he was very proactive, and i never needed to ask for an update as it was all pushed to me.
+
+Dave.  Being so flexible with accepting the deploy tasks for this upcoming release.  your juicy brain and go get'em attitude is greatly appreciated my man.
+
+Thats all from me, PjM out!
